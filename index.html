@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book-archive-Arifulislamt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font aswame link  -->
+    <script src="https://kit.fontawesome.com/dd8dba0b6a.js" crossorigin="anonymous"></script>
+    <!-- bootstrap css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+<body class="ar-header-color">
+    <!------------------
+         header title  
+    -------------------->
+    <h1 class="text-center m-5 coustom fw-bold"><i class="fas fa-book"></i> <span>Welcome to Our Open Library</span></h1>
+    <main>
+        <!------------------- 
+            Input section
+        --------------------->
+        <section class="container">
+            <!-- Input Box -->
+            <div class="input-group mb-3 w-75 mx-auto mt-5">
+                <input id="search-field" type="text" class="form-control rounded" placeholder="search the book u want">
+                <button onclick="searchBook()" class="btn btn-secondary fw-bold text-white ms-2 rounded" type="" id="button-search">search</button>
+              </div>
+          </section>
+
+        <!-----------------------
+             Results found 
+        ------------------------->
+        <h1 class="container coustom text-center mb-5" id="book-numbers"></h1>
+
+         
+        <!-------------------
+           error handleing  
+        --------------------->
+        <h1 class="container text-danger text-center mb-5" id="error">Insert a valid name</h1>
+
+        <!------------------- 
+         Book display section
+        --------------------->
+        <section class="container" id="rong">
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 " id="book-display">
+                  </div>
+                  
+        </section>
+    </main>
+    <!-- js link  -->
+    <script src="js/main.js"></script>
+</body>
+</html>
